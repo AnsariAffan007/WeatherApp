@@ -1,5 +1,5 @@
 let city = "Mumbai";
-let url = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=metric&appid=20b6e159248ddd6685e34e5d59c1ad58";
+let url = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=metric&appid=API_KEY";
 var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 // Set up Animation on Load
