@@ -104,7 +104,7 @@ function displayData(weatherData) {
     document.querySelector(".humidity").innerHTML = 'Humidity  :  ';
     document.querySelector(".wind-speed").innerHTML = 'Wind Speed  :  '
 
-    document.querySelector(".icon").src = "http://openweathermap.org/img/wn/" + weatherData.list[0].weather[0].icon + "@2x.png";
+    document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + weatherData.list[0].weather[0].icon + "@2x.png";
     document.querySelector(".temp").innerHTML = weatherData.list[0].main.temp + "&#8451;";
     document.querySelector(".weather-type").innerHTML = weatherType;
 
@@ -126,7 +126,7 @@ function displayData(weatherData) {
             document.querySelector(".forecast-cards").innerHTML += `
             <div class="card">
                 <span class="date">${days[new Date(element.dt_txt.split(' ')[0]).getDay()]} ${new Date(element.dt_txt.split(' ')[0]).getDate()}</span>
-                <img src="http://openweathermap.org/img/wn/${element.weather[0].icon}@2x.png" alt="">
+                <img src="https://openweathermap.org/img/wn/${element.weather[0].icon}@2x.png" alt="">
                 <span style="margin-bottom: 7px;" class="forecast-temp">${element.main.temp}&#8451;</span>
                 <span class="forecast-weather-type">${element.weather[0].main}</span>
             </div>`
